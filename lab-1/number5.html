@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Five</title>
+    <style>
+        body {
+            margin: 20px;
+        }
+
+        .form-container {
+            border: 1px solid #ccc;
+            padding: 20px;
+            width: 35%;
+            margin: 0 auto;
+            border-radius: 5px;
+        }
+
+        .form-group {
+            display: flex;
+            align-items: space-between;
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            width: 30%;
+            margin-right: 10px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group input[type="radio"],
+        .form-group input[type="datetime-local"],
+        .form-group input[type="checkbox"],
+        .form-group select {
+            width: 70%;
+            padding: 8px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        .form-group input[type="button"] {
+            padding: 16px;
+            border: none;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 6px;
+            background-color: #e6e6e6;
+            color: black;
+            cursor: pointer;
+        }
+
+        .form-group-radio {
+            margin-bottom: 15px;
+        }
+
+        .form-group-radio label {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .options-container {
+            margin-left: 30%;
+        }
+
+        .option {
+            margin: 15px 0;
+        }
+
+        .option label {
+            margin-left: 5px;
+            font-weight: normal;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-container">
+        <form action="/form.php" method="POST">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="text">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email">
+            </div>
+            <div class="form-group-radio">
+                <label>Which taxi do you require?</label>
+                <div class="options-container">
+                    <div class="option">
+                        <input type="radio" value="Car">
+                        <label for="car">Car</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" value="Van">
+                        <label for="van">Van</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" value="TukTuk">
+                        <label for="tuktuk">Tuk Tuk</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group-radio">
+                <label>Extras</label>
+                <div class="options-container">
+                    <div class="option">
+                        <input type="checkbox" value="Baby Seat">
+                        <label for="baby-seat">Baby Seat</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" value="Wheelchair Access">
+                        <label for="wheelchair-access">Wheelchair Access</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" value="Stock Tip">
+                        <label for="stock-tip">Stock Tip</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="datetime">Date and Time</label>
+                <input type="datetime-local">
+            </div>
+
+            <div class="form-group">
+                <label for="pickup-place">Pickup Place</label>
+                <select>
+                    <option value="Kathmandu">Kathmandu</option>
+                    <option value="Lalitpur">Lalitpur</option>
+                    <option value="Bhaktapur">Bhaktapur</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="dropoff-place">Dropoff Place</label>
+                <input type="text">
+            </div>
+
+            <div class="form-group">
+                <label for="special-instructions">Special Instructions</label>
+                <textarea style="width: 70%; height: 120px; resize: vertical;"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="submit"></label>
+                <input type="button" value="Submit Booking">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
