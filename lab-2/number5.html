@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form Validation</title>
+</head>
+<body>
+  <h1>Form Validation</h1>
+
+  <form id="myForm" onsubmit="validateForm(event)">
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" name="firstName">
+    <br><br>
+
+    <label for="middleName">Middle Name:</label>
+    <input type="text" id="middleName" name="middleName">
+    <br><br>
+
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" name="lastName">
+    <br><br>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <script>
+    function validateForm(event) {
+      // Fetching input values
+      var firstName = document.getElementById('firstName').value.trim();
+      var middleName = document.getElementById('middleName').value.trim();
+      var lastName = document.getElementById('lastName').value.trim();
+
+      // Checking if any field is empty
+      if (firstName === '' || lastName === '' || middleName === '') {
+        alert('All Fields are required!');
+        return; // Stop further execution
+      }
+
+      // Displaying input values (just for demonstration)
+      alert('First Name: ' + firstName + '\nMiddle Name: ' + middleName + '\nLast Name: ' + lastName);
+    }
+  </script>
+</body>
+</html>

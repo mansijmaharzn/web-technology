@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Display JSON Array in HTML</title>
+</head>
+<body>
+  <h1>Display JSON Array in HTML</h1>
+
+  <p id="json-data"></p>
+
+  <script>
+    // JSON array as a string (simulating received JSON data)
+    var jsonArrayString = '[{"firstname": "John", "lastname": "Doe"}, {"firstname": "Jane", "lastname": "Smith"}]';
+
+    // Parse the JSON array into a JavaScript variable
+    var jsonArray = JSON.parse(jsonArrayString);
+
+    // Access the first element of the array
+    var firstElement = jsonArray[0];
+
+    // Display the value of the first array element in HTML
+    var jsonDataElement = document.getElementById('json-data');
+    jsonDataElement.textContent = 'First element: Firstname - ' + firstElement.firstname + ', Lastname - ' + firstElement.lastname;
+  </script>
+</body>
+</html>

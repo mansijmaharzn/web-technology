@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Convert String to Lowercase</title>
+</head>
+<body>
+  <h1>Convert String to Lowercase</h1>
+
+  <p id="string-holder">Original string: "Hello World!"</p>
+
+  <!-- Button to trigger the conversion -->
+  <button id="convert-btn">Convert to Lowercase</button>
+
+  <script>
+    // Function to convert string to lowercase
+    function convertToLowerCase() {
+      var originalString = "Hello World!";
+      var convertedString = originalString.toLowerCase();
+
+      // Display the converted string in the HTML element
+      document.getElementById('string-holder').textContent = "Converted to lowercase: \"" + convertedString + "\"";
+    }
+
+    // Event listener to trigger the conversion on button click
+    document.getElementById('convert-btn').addEventListener('click', convertToLowerCase);
+  </script>
+</body>
+</html>
