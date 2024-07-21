@@ -1,0 +1,7 @@
+<!ELEMENT students (student+)>
+<!ELEMENT student (name, age, gender, faculty, address)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT age (#PCDATA)>
+<!ELEMENT gender (#PCDATA)>
+<!ELEMENT faculty (#PCDATA)>
+<!ELEMENT address (#PCDATA)>

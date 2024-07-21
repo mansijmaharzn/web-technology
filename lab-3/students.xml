@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE students SYSTEM "students.dtd">
+<students>
+    <student>
+        <name>John Doe</name>
+        <age>20</age>
+        <gender>Male</gender>
+        <faculty>Engineering</faculty>
+        <!-- <address>123 Elm Street, Springfield</address> -->
+    </student>
+    <student>
+        <name>Jane Smith</name>
+        <age>22</age>
+        <gender>Female</gender>
+        <faculty>Arts</faculty>
+        <address>456 Oak Avenue, Metropolis</address>
+    </student>
+    <student>
+        <name>Emily Johnson</name>
+        <age>19</age>
+        <gender>Female</gender>
+        <faculty>Science</faculty>
+        <address>789 Pine Road, Gotham</address>
+    </student>
+    <student>
+        <name>Michael Brown</name>
+        <age>21</age>
+        <gender>Male</gender>
+        <faculty>Business</faculty>
+        <address>101 Maple Drive, Smallville</address>
+    </student>
+    <student>
+        <name>Sarah Davis</name>
+        <age>23</age>
+        <gender>Female</gender>
+        <faculty>Law</faculty>
+        <address>202 Birch Lane, Star City</address>
+    </student>
+</students>
