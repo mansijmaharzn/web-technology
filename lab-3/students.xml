@@ -6,7 +6,7 @@
         <age>20</age>
         <gender>Male</gender>
         <faculty>Engineering</faculty>
-        <!-- <address>123 Elm Street, Springfield</address> -->
+        <address>123 Elm Street, Springfield</address>
     </student>
     <student>
         <name>Jane Smith</name>
